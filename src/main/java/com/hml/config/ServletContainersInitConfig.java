@@ -4,6 +4,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
 
 import javax.servlet.DispatcherType;
@@ -27,7 +28,8 @@ public class ServletContainersInitConfig extends AbstractDispatcherServletInitia
     @Override
     protected WebApplicationContext createServletApplicationContext() {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
-        ctx.register(SpringMvcConfig.class);
+//        ctx.register(SpringMvcConfig.class);
+        ctx.register(DispatcherServlet.class);
         return ctx;
     }
 
