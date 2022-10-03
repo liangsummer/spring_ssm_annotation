@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1e005c6-4f8a-4725-84ec-204f7731fc05" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/hml/config/ServletContainersInitConfig2.java" afterDir="false" />
+    <list default="true" id="d1e005c6-4f8a-4725-84ec-204f7731fc05" name="Default Changelist" comment="发现return new Class[]{DispatcherServlet.class};可以不用指出具体的mvc配置类的了，DispatcherSerlet.class就行">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hml/config/ServletContainersInitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hml/config/ServletContainersInitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hml/config/SpringMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hml/config/SpringMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hml/config/ServletContainersInitConfig2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hml/config/ServletContainersInitConfig2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hml/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hml/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hml/config/JdbcConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hml/config/MybaticConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hml/config/ServletContainersInitConfig.class" beforeDir="false" />
@@ -30,10 +30,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/hml/system/exception/BuinessException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hml/system/exception/SystemException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT/WEB-INF/classes/com/hml/config/JdbcConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT/WEB-INF/classes/com/hml/config/MybaticConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT/WEB-INF/classes/com/hml/config/ServletContainersInitConfig.class" beforeDir="false" />
@@ -72,10 +68,6 @@
       <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.1.9.RELEASE.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.1.9.RELEASE.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring_ssm_annotation-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.1.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/logging.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/tomcat-users.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/conf/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2022-08-14" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +82,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../maven-repository/org/springframework/spring-test/5.1.9.RELEASE/spring-test-5.1.9.RELEASE.jar!/org/springframework/test/web/servlet/TestDispatcherServlet.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../maven-repository/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/META-INF/services/javax.servlet.ServletContainerInitializer" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../maven-repository/org/springframework/spring-web/5.1.9.RELEASE/spring-web-5.1.9.RELEASE.jar!/org/springframework/web/SpringServletContainerInitializer.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../maven-repository/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$PROJECT_DIR$/../../../maven-repository/org/springframework/spring-webmvc/5.1.9.RELEASE/spring-webmvc-5.1.9.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -121,6 +125,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaClassFindUsagesOptions.isDerivedClasses": "true",
+    "JavaClassFindUsagesOptions.isFieldsUsages": "true",
+    "JavaClassFindUsagesOptions.isMethodsUsages": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -274,8 +281,16 @@
       <option name="presentableId" value="Default" />
       <updated>1660443706075</updated>
       <workItem from="1660443707320" duration="4494000" />
-      <workItem from="1664714715679" duration="3814000" />
+      <workItem from="1664714715679" duration="20255000" />
     </task>
+    <task id="LOCAL-00001" summary="发现return new Class[]{DispatcherServlet.class};可以不用指出具体的mvc配置类的了，DispatcherSerlet.class就行">
+      <created>1664718880013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664718880013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,10 +301,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="fenzhi01" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="发现return new Class[]{DispatcherServlet.class};可以不用指出具体的mvc配置类的了，DispatcherSerlet.class就行" />
+    <option name="LAST_COMMIT_MESSAGE" value="发现return new Class[]{DispatcherServlet.class};可以不用指出具体的mvc配置类的了，DispatcherSerlet.class就行" />
   </component>
 </project>

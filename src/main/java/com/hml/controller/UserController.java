@@ -7,6 +7,7 @@ import com.hml.domain.User;
 import com.hml.service.UserService;
 import com.hml.system.exception.BuinessException;
 import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -73,10 +74,11 @@ public class UserController {
 
 
     @PostMapping("/login")
-    public Result login(String username,String password){
-        System.out.println("username: "+username +" "+password);
-        User login = userService.login(username, password);
-        return new Result(null != login?Code.GET_OK:Code.GET_FALSE,login);
+    public Result login(String userName, String password){
+        System.out.println("username: "+userName +" "+password);
+        User user = userService.login(userName, password);
+        System.out.println(user.toString());
+        return new Result(null != user?Code.GET_OK:Code.GET_FALSE,user,user.toString());
 
     }
 
